@@ -1,19 +1,18 @@
 
-    body {
-        background-image: url('https://cdn.wallpapersafari.com/67/32/DcJ53f.jpg');
+   body {
+        background-image: url('https://img.freepik.com/free-photo/luxurious-golden-white-marble-wallpaper_23-2149379720.jpg?w=2000');
         background-repeat: no-repeat;
         background-size: 1800px 1000px;
         }
-    h1   {
+    h1  {
         color: rgb(244, 17, 17);
         font-family: verdana;
         font-size: 200%;
         }
-    p1   {
-        color: rgb(244, 17, 17);
+    p1  {
+        color: #14122C;
         font-family: Courier New;
         font-size: 160%;
-        padding: 10px;
         width: 95%;
         margin: 10px auto;
         text-align: justify;
