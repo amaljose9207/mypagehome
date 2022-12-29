@@ -8,9 +8,9 @@
 </head>
 <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="Trulli" width="300" height="300">
 <body>
-  <h1>Javascript Algorithms and Data Structures</h1>
+<h1>Javascript Algorithms and Data Structures</h1>
 
-  <h2>Comment Your JavaScript Code</h2>
+<h2>Comment Your JavaScript Code</h2>
 <p>
 There are two ways to write comments in JavaScript:
 <br><br>
@@ -20,7 +20,7 @@ Using // will tell JavaScript to ignore the remainder of the text on the current
 You can make a multi-line comment beginning with /* and ending with */. 
 <br>/* This is a multi-line comment */ts.
 </p>
-  <h2>Declare JavaScript Variables</h2>
+<h2>Declare JavaScript Variables</h2>
 <p>
 In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are <b>undefined, null, boolean, string, symbol, bigint, number, and object.</b>
 <br><br>
@@ -36,6 +36,96 @@ We tell JavaScript to create or declare a variable by putting the keyword var in
 creates a variable called ourName. In JavaScript we end statements with semicolons. Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
 </p>
 
+<h2>Storing Values with the Assignment Operator</h2>
+
+<p>
+In JavaScript, you can store a value in a variable with the assignment operator (=).
+<br><br>
+<b>myVariable = 5;</b><br>
+This assigns the Number value 5 to myVariable.
+<br><br>
+If there are any calculations to the right of the = operator, those are performed before the value is assigned to the variable on the left of the operator.
+<br><br>
+<b>var myVar; </b><br>
+<b>myVar = 5; </b><br><br>
+First, this code creates a variable named myVar. Then, the code assigns 5 to myVar. Now, if myVar appears again in the code, the program will treat it as if it is 5.
+</p>
+
+<h2>Assigning the Value of One Variable to Another</h2>
+
+<p>
+After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.
+<br><br>
+<b>
+var myVar; <br>
+myVar = 5; <br>
+var myNum; <br>
+myNum = myVar; <br>
+</b> <br>
+The above declares a myVar variable with no value, then assigns it the value 5. Next, a variable named myNum is declared with no value. Then, the contents of myVar (which is 5) is assigned to the variable myNum. Now, myNum also has the value of 5.
+</p><br>
+
+<h2>Initializing Variables with the Assignment Operator</h2>
+
+<p>
+It is common to initialize a variable to an initial value in the same line as it is declared.
+<br><br><b>var myVar = 0;</b><br><br>
+Creates a new variable called myVar and assigns it an initial value of 0.  
+</p>
+
+<h2>Declare String Variables</h2>
+<p>
+Previously you used the following code to declare a variable:
+<br><br>
+<b>var myName;</b> <br><br>
+But you can also declare a string variable like this:
+<br><br>
+<b>var myName = "your name";</b> <br><br>
+"your name" is called a string literal. A string literal, or string, is a series of zero or more characters enclosed in single or double quotes.
+</p>
+
+<h2>Understanding Uninitialized Variables</h2>
+<p>
+When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a string of undefined.
+</p>
+
+<h2>Understanding Case Sensitivity in Variables</h2>
+<p>
+  In JavaScript all variables and function names are case sensitive. This means that capitalization matters.<br><br>
+
+MYVAR is not the same as MyVar nor myvar. It is possible to have multiple distinct variables with the same name but different casing. It is strongly recommended that for the sake of clarity, you do not use this language feature.<br><br>
+
+<u>Best Practice</u><br><br>
+
+Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.<br><br>
+
+<u>Examples:</u><br><br>
+
+<b>var someVariable;<br>
+var anotherVariableName;<br>
+var thisVariableNameIsSoLong;<br> </b>
+</p>
+<h2>Explore Differences Between the var and let Keywords</h2>
+<p>
+One of the biggest problems with declaring variables with the var keyword is that you can easily overwrite variable declarations:<br><br>
+
+<b>var camper = "James";<br>
+var camper = "David";<br>
+console.log(camper);<br><br></b>
+In the code above, the camper variable is originally declared as James, and is then overridden to be David. The console then displays the string David.<br><br>
+
+In a small application, you might not run into this type of problem. But as your codebase becomes larger, you might accidentally overwrite a variable that you did not intend to. Because this behavior does not throw an error, searching for and fixing bugs becomes more difficult.<br><br>
+
+A keyword called let was introduced in ES6, a major update to JavaScript, to solve this potential issue with the var keyword. You'll learn about other ES6 features in later challenges.<br><br>
+
+If you replace var with let in the code above, it results in an error:<br><br>
+
+<b>let camper = "James";<br>
+let camper = "David";<br><br></b>
+The error can be seen in your browser console.<br><br>
+
+So unlike var, when you use let, a variable with the same name can only be declared once.
+</p>
 </body>
 <style>
     h1  {
@@ -44,9 +134,10 @@ creates a variable called ourName. In JavaScript we end statements with semicolo
         font-size: 200%;
         }
     h2  {
-        color: rgb(255, 0, 0);
-        font-family: Georgia;
+        color: #04F369;
+        font-family: Tahoma;
         font-size: 140%;
+        text-decoration: underline;
         }
      p  {
         color: Black;
