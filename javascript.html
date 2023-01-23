@@ -10,21 +10,31 @@
 <body>
 <h1>Javascript Algorithms and Data Structures</h1>
 <h3>
-Comment Your JavaScript Code<br>
-Declare JavaScript Variables<br>
-Storing Values with the Assignment Operator<br>
-Assigning the Value of One Variable to Another<br>
-Initializing Variables with the Assignment Operator<br>
-Declare String Variables<br>
-Understanding Uninitialized Variables<br>
-Understanding Case Sensitivity in Variables<br>
-Explore Differences Between the var and let Keywords<br>
-Declare a Read-Only Variable with the const Keyword<br>
-Add Two Numbers with JavaScript<br>
-Subtract One Number from Another with JavaScript<br>
-<a href="#11">Subtract One Number from Another with JavaScript </a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <a href="#01">Comment Your JavaScript Code </a>
+ <a href="#02">Declare JavaScript Variables </a>
+ <a href="#03">Storing Values with the Assignment Operator </a>
+ <a href="#04">Assigning the Value of One Variable to Another </a>
+ <a href="#05">Initializing Variables with the Assignment Operator </a>
+ <a href="#06">Declare String Variables </a>
+ <a href="#07">Understanding Uninitialized Variables </a>
+ <a href="#08">Understanding Case Sensitivity in Variables </a>
+ <a href="#09">Explore Differences Between the var and let Keywords </a>
+ <a href="#10">Declare a Read-Only Variable with the const Keyword </a>
+ <a href="#11">Add Two Numbers with JavaScript </a>
+ <a href="#12">Subtract One Number from Another with JavaScript </a>
 </h3>
-<h2>Comment Your JavaScript Code</h2>
+<h2 id="01">Comment Your JavaScript Code</h2>
 <p>
 There are two ways to write comments in JavaScript:
 <br><br>
@@ -34,7 +44,7 @@ Using // will tell JavaScript to ignore the remainder of the text on the current
 You can make a multi-line comment beginning with /* and ending with */. 
 <br>/* This is a multi-line comment */.
 </p>
-<h2>Declare JavaScript Variables</h2>
+<h2 id="02">Declare JavaScript Variables</h2>
 <p>
 In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are <b>undefined, null, boolean, string, symbol, bigint, number, and object.</b>
 <br><br>
@@ -50,7 +60,7 @@ We tell JavaScript to create or declare a variable by putting the keyword var in
 creates a variable called ourName. In JavaScript we end statements with semicolons. Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
 </p>
 
-<h2>Storing Values with the Assignment Operator</h2>
+<h2 id="03">Storing Values with the Assignment Operator</h2>
 
 <p>
 In JavaScript, you can store a value in a variable with the assignment operator (=).
@@ -65,7 +75,7 @@ If there are any calculations to the right of the = operator, those are performe
 First, this code creates a variable named myVar. Then, the code assigns 5 to myVar. Now, if myVar appears again in the code, the program will treat it as if it is 5.
 </p>
 
-<h2>Assigning the Value of One Variable to Another</h2>
+<h2 id="04">Assigning the Value of One Variable to Another</h2>
 <p>
 After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.
 <br><br>
@@ -78,14 +88,14 @@ myNum = myVar; <br>
 The above declares a myVar variable with no value, then assigns it the value 5. Next, a variable named myNum is declared with no value. Then, the contents of myVar (which is 5) is assigned to the variable myNum. Now, myNum also has the value of 5.
 </p><br>
 
-<h2>Initializing Variables with the Assignment Operator</h2>
+<h2 id="05">Initializing Variables with the Assignment Operator</h2>
 <p>
 It is common to initialize a variable to an initial value in the same line as it is declared.
 <br><br><b>var myVar = 0;</b><br><br>
 Creates a new variable called myVar and assigns it an initial value of 0.  
 </p>
 
-<h2>Declare String Variables</h2>
+<h2 id="06">Declare String Variables</h2>
 <p>
 Previously you used the following code to declare a variable:
 <br><br>
@@ -96,12 +106,12 @@ But you can also declare a string variable like this:
 "your name" is called a string literal. A string literal, or string, is a series of zero or more characters enclosed in single or double quotes.
 </p>
 
-<h2>Understanding Uninitialized Variables</h2>
+<h2 id=07">Understanding Uninitialized Variables</h2>
 <p>
 When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a string of undefined.
 </p>
 
-<h2>Understanding Case Sensitivity in Variables</h2>
+<h2 id="08">Understanding Case Sensitivity in Variables</h2>
 <p>
   In JavaScript all variables and function names are case sensitive. This means that capitalization matters.<br><br>
 
@@ -117,7 +127,7 @@ Write variable names in JavaScript in camelCase. In camelCase, multi-word variab
 var anotherVariableName;<br>
 var thisVariableNameIsSoLong;<br> </b>
 </p>
-<h2>Explore Differences Between the var and let Keywords</h2>
+<h2 id="09">Explore Differences Between the var and let Keywords</h2>
 <p>
 One of the biggest problems with declaring variables with the var keyword is that you can easily overwrite variable declarations:<br><br>
 
@@ -138,7 +148,7 @@ The error can be seen in your browser console.<br><br>
 
 So unlike var, when you use let, a variable with the same name can only be declared once.
 </p>
-<h2>Declare a Read-Only Variable with the const Keyword</h2>
+<h2 id="10">Declare a Read-Only Variable with the const Keyword</h2>
 <p>
 The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword.<br><br>
 
@@ -150,7 +160,7 @@ The console will display an error due to reassigning the value of <b>FAV_PET</b>
 
 You should always name variables you don't want to reassign using the const keyword. This helps when you accidentally attempt to reassign a variable that is meant to stay constant.
 </p>
-<h2>Add Two Numbers with JavaScript</h2>
+<h2 id="11">Add Two Numbers with JavaScript</h2>
 <p>
 <b>Number</b> is a data type in JavaScript which represents numeric data.<br><br>
 Now let's try to add two numbers using JavaScript.<br><br>
@@ -159,7 +169,7 @@ Example:<br><br>
 <b>const myVar = 5 + 10;<br>
 myVar now has the value 15<br></b>
 </p>
-<h2 id="11">Subtract One Number from Another with JavaScript</h2>
+<h2 id="12">Subtract One Number from Another with JavaScript</h2>
 <p>
 We can also subtract one number from another.<br><br>
 JavaScript uses the - symbol for subtraction.<br><br>
