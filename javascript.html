@@ -18,7 +18,7 @@ Using // will tell JavaScript to ignore the remainder of the text on the current
 <br>// This is an in-line comment.
 <br><br>
 You can make a multi-line comment beginning with /* and ending with */. 
-<br>/* This is a multi-line comment */ts.
+<br>/* This is a multi-line comment */.
 </p>
 <h2>Declare JavaScript Variables</h2>
 <p>
@@ -125,6 +125,35 @@ let camper = "David";<br><br></b>
 The error can be seen in your browser console.<br><br>
 
 So unlike var, when you use let, a variable with the same name can only be declared once.
+</p>
+<h2>Declare a Read-Only Variable with the const Keyword</h2>
+<p>
+The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword.<br><br>
+
+const has all the awesome features that let has, with the added bonus that variables declared using const are read-only. They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned<br><br>
+
+<b>const FAV_PET = "Cats";<br>
+FAV_PET = "Dogs";</b><br><br>
+The console will display an error due to reassigning the value of <b>FAV_PET</b>.<br><br>
+
+You should always name variables you don't want to reassign using the const keyword. This helps when you accidentally attempt to reassign a variable that is meant to stay constant.
+</p>
+<h2>Add Two Numbers with JavaScript</h2>
+<p>
+<b>Number</b> is a data type in JavaScript which represents numeric data.<br><br>
+Now let's try to add two numbers using JavaScript.<br><br>
+JavaScript uses the <b>+</b> symbol as an addition operator when placed between two numbers.<br><br>
+Example:<br><br>
+<b>const myVar = 5 + 10;<br>
+myVar now has the value 15<br></b>
+</p>
+<h2>Subtract One Number from Another with JavaScript</h2>
+<p>
+We can also subtract one number from another.<br><br>
+JavaScript uses the - symbol for subtraction.<br><br>
+Example<br><br>
+<b> const myVar = 12 - 6;<br>
+myVar would have the value 6.</b><br><br>
 </p>
 </body>
 <style>
